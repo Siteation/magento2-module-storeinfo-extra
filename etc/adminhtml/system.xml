@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="general">
+            <group id="store_information_extra" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Store Extra Information</label>
+                <field id="facebook_address" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook url</label>
+                    <validate>validate-url</validate>
+                </field>
+                <field id="twitter_handle" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Twitter handle</label>
+                    <validate>no-whitespace</validate>
+                    <tooltip>Enter a valid Twitter handel without the url</tooltip>
+                </field>
+                <field id="linkedin_address" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>LinkedIn url</label>
+                    <validate>validate-url</validate>
+                </field>
+                <field id="instagram_address" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Instagram url</label>
+                    <validate>validate-url</validate>
+                </field>
+                <field id="pinterest_address" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pinterest url</label>
+                    <validate>validate-url</validate>
+                </field>
+                <field id="youtube_address" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>YouTube url</label>
+                    <validate>validate-url</validate>
+                </field>
+                <field id="vimeo_address" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Vimeo url</label>
+                    <validate>validate-url</validate>
+                </field>
+                <field id="whatsapp_number" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>WhatsApp Contact Number</label>
+                    <validate>no-marginal-whitespace</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

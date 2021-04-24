@@ -1,0 +1,35 @@
+{
+  "name": "siteation/magento2-module-storeinfo-extra",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "magento2-module",
+  "description": "Get your store information with ease",
+  "readme": "README.md",
+  "keywords": [
+    "magento2",
+    "magento2-module",
+    "magento2-hyva",
+    "Socials",
+    "whatsapp"
+    "facebook",
+    "twitter",
+    "linkedin",
+    "instagram",
+    "youtube",
+  ],
+  "authors": [
+    {
+      "name": "Siteation",
+      "email": "info@siteation.nl",
+      "homepage": "https://www.siteation.nl"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Siteation\\StoreInfoExtra\\": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<?php
+declare(strict_types=1);
+
+use Hyva\Theme\Model\ViewModelRegistry;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+use Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra;
+
+/** @var ViewModelRegistry $viewModels */
+/** @var Template $block */
+/** @var Escaper $escaper */
+
+/** @var StoreInfoExtra $storeInfo */
+$storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
+?>
+
+<?php if ($whatsapp = $storeInfoExtra->getWhatsApp()): ?>
+    <a class="btn btn-primary whatsapp"
+        href="https://api.whatsapp.com/send?phone=<?= $escaper->escapeHtml($whatsapp); ?>"
+        target="_blank"
+        rel="noopener noreferrer">
+        <span><?= $escaper->escapeHtml(__('Call us via WhatsApp')); ?></span>
+    </a>
+<?php endif; ?>

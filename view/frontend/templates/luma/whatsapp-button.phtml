@@ -1,0 +1,21 @@
+<?php
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+
+/** @var Siteation\StoreInfoExt\ViewModel\StoreInfoExtra $storeInfoExtra */
+$storeInfoExtra = $block->getData('viewModelStoreInfo');
+?>
+
+<?php if ($whatsapp = $storeInfoExtra->getWhatsapp()): ?>
+    <a class="action primary whatsapp"
+        href="https://api.whatsapp.com/send?phone=<?= $escaper->escapeHtml($whatsapp); ?>"
+        target="_blank"
+        rel="noopener noreferrer">
+    <span><?= $escaper->escapeHtml(__('Call us via WhatsApp')); ?></span>
+    </a>
+<?php endif; ?>

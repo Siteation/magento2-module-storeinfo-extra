@@ -1,0 +1,110 @@
+<?php
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+
+/** @var Siteation\StoreInfoExt\ViewModel\StoreInfoExtra $storeInfoExtra */
+$storeInfoExtra = $block->getData('viewModelStoreInfo');
+?>
+
+<div class="socials flex">
+    <?php if ($social = $storeInfoExtra->getFacebook()): ?>
+        <a class="action facebook"
+            href="<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('Go to our %1 page', 'Facebook')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#facebook" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getTwitter()): ?>
+        <a class="action twitter"
+            href="https://twitter.com/<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('Visit %1 on Twitter for more', $social)); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#twitter" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getLinkedIn()): ?>
+        <a class="action linkedin"
+            href="<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('Go to our %1 page', 'LinkedIn')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#linkedin" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getInstagram()): ?>
+        <a class="action instagram"
+            href="<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('Explore our %1 page', 'Instagram')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#instagram" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getPinterest()): ?>
+        <a class="action pinterest"
+            href="<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('Explore our %1 page', 'Pinterest')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#pinterest" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getYouTube()): ?>
+        <a class="action youtube"
+            href="<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('View more on our %1 page', 'YouTube')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#youtube" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getVimeo()): ?>
+        <a class="action vimeo"
+            href="<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('View more on our %1 page', 'Vimeo')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#vimeo" />
+            </svg>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($social = $storeInfoExtra->getWhatsapp()): ?>
+        <a class="action whatsapp"
+            href="https://api.whatsapp.com/send?phone=<?= $escaper->escapeHtml($social); ?>"
+            target="_blank"
+            rel="noopener noreferrer">
+            <svg width="24" height="24" fill="currentColor">
+                <title><?= $escaper->escapeHtml(__('Call us via %1', 'WhatsApp')); ?></title>
+                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#whatsapp" />
+            </svg>
+        </a>
+    <?php endif; ?>
+</div>
