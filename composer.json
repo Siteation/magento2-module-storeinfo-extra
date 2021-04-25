@@ -9,13 +9,13 @@
     "magento2",
     "magento2-module",
     "magento2-hyva",
-    "Socials",
-    "whatsapp"
+    "socials",
+    "whatsapp",
     "facebook",
     "twitter",
     "linkedin",
     "instagram",
-    "youtube",
+    "youtube"
   ],
   "authors": [
     {

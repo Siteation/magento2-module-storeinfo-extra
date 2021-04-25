@@ -27,6 +27,8 @@ By defaut this module loads nothing.
 
 Use one of the samples to get started.
 
+After this Enter your information in the avaible options found in Stores > Configuration > General > General > Store Extra information
+
 ### Adding a social buttons
 
 ```xml
@@ -81,3 +83,7 @@ Use one of the samples to get started.
 
 [See the Wiki](https://github.com/Siteation/magento2-module-storeinfo/wiki)
 on some nice use cases.
+
+## Preview sample
+
+![Magento screenshot](assets/preview.png)
