@@ -12,7 +12,7 @@
                 <field id="twitter_handle" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Twitter handle</label>
                     <validate>no-whitespace</validate>
-                    <tooltip>Enter a valid Twitter handel without the url</tooltip>
+                    <tooltip>Enter a valid Twitter handle without the url</tooltip>
                 </field>
                 <field id="linkedin_address" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>LinkedIn url</label>

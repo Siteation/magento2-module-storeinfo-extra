@@ -13,7 +13,7 @@ use Magento\Framework\Escaper;
 $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
 ?>
 
-<div class="socials flex">
+<div class="socials">
     <?php if ($social = $storeInfoExtra->getFacebook()): ?>
         <a class="action facebook"
             href="<?= $escaper->escapeHtml($social); ?>"
