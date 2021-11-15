@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixes
+- phtml sample socials for hyva missing use
+
 ## [1.0.1] - 2021-10-04
 ### Fixes
 - svg sprite viewbox position
