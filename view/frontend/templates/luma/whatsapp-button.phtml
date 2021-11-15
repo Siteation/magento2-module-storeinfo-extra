@@ -1,13 +1,13 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\Escaper;
+use Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra;
 
 /** @var Template $block */
 /** @var Escaper $escaper */
+/** @var StoreInfoExtra $storeInfoExtra */
 
-/** @var Siteation\StoreInfoExt\ViewModel\StoreInfoExtra $storeInfoExtra */
 $storeInfoExtra = $block->getData('viewModelStoreInfo');
 ?>
 

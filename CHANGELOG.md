@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2021-11-15
+### Changed
+- Add `use` to Luma samples
+
 ### Fixes
-- phtml sample socials for hyva missing use
+- phtml sample socials for hyva missing `use`
 
 ## [1.0.1] - 2021-10-04
 ### Fixes
