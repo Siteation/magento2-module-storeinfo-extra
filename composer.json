@@ -20,8 +20,8 @@
   "authors": [
     {
       "name": "Siteation",
-      "email": "info@siteation.nl",
-      "homepage": "https://www.siteation.nl"
+      "email": "info@siteation.dev",
+      "homepage": "https://siteation.dev/"
     }
   ],
   "autoload": {
