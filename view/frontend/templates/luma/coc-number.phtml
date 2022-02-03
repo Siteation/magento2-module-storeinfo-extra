@@ -1,0 +1,16 @@
+<?php declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+use Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+/** @var StoreInfoExtra $storeInfoExtra */
+
+$storeInfoExtra = $block->getData('viewModelStoreInfo');
+?>
+
+<?php if ($coc = $storeInfoExtra->getCoCNumber()): ?>
+    <div><?= $escaper->escapeHtml(__('CoC Number %1', $coc)); ?></div>
+<?php endif; ?>

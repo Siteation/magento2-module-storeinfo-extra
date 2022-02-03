@@ -1,0 +1,18 @@
+<?php declare(strict_types=1);
+
+use Hyva\Theme\Model\ViewModelRegistry;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\Escaper;
+use Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra;
+
+/** @var ViewModelRegistry $viewModels */
+/** @var Template $block */
+/** @var Escaper $escaper */
+/** @var StoreInfoExtra $storeInfoExtra */
+
+$storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
+?>
+
+<?php if ($coc = $storeInfoExtra->getCoCNumber()): ?>
+    <div><?= $escaper->escapeHtml(__('CoC Number %1', $coc)); ?></div>
+<?php endif; ?>

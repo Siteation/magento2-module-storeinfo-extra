@@ -5,6 +5,9 @@
         <section id="general">
             <group id="store_information_extra" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Store Extra Information</label>
+                <field id="coc_number" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>CoC number</label>
+                </field>
                 <field id="whatsapp_number" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>WhatsApp Contact Number</label>
                     <validate>no-marginal-whitespace</validate>
