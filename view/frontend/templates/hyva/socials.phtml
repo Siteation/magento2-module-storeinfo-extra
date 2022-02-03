@@ -97,16 +97,4 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
             </svg>
         </a>
     <?php endif; ?>
-
-    <?php if ($social = $storeInfoExtra->getWhatsapp()): ?>
-        <a class="action whatsapp"
-            href="https://api.whatsapp.com/send?phone=<?= $escaper->escapeHtml($social); ?>"
-            target="_blank"
-            rel="noopener noreferrer">
-            <svg width="24" height="24" fill="currentColor">
-                <title><?= $escaper->escapeHtml(__('Call us via %1', 'WhatsApp')); ?></title>
-                <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#whatsapp" />
-            </svg>
-        </a>
-    <?php endif; ?>
 </div>
