@@ -24,16 +24,33 @@ bin/magento setup:upgrade
 
 ## How to use
 
-By defaut this module loads nothing.
+By default this module loads nothing.
 
 Use one of the samples to get started.
 
-After this Enter your information in the avaible options found in Stores > Configuration > General > General > Store Extra information
+After this Enter your information in the available options found in Stores > Configuration > General > General > Store Extra information
 
-### Adding a social buttons
+### Adding sample block
+
+<details open><summary>Hyva - XML Sample</summary>
 
 ```xml
-<!-- Luma Sample -->
+<referenceContainer name="footer">
+    <block
+        name="footer.store.socials"
+        as="footer-store-socials"
+        template="Siteation_StoreInfoExtra::hyva/socials.phtml"
+    />
+</referenceContainer>
+```
+
+> Other options are: `coc-number.phtml`, `whatsapp-button.phtml`
+
+</details>
+
+<details><summary>Luma - XML Sample</summary>
+
+```xml
 <referenceContainer name="footer">
     <block name="footer.store.socials"
         as="footer-store-socials"
@@ -44,47 +61,20 @@ After this Enter your information in the avaible options found in Stores > Confi
         </arguments>
     </block>
 </referenceContainer>
-<!-- Hyva Sample -->
-<referenceContainer name="footer">
-    <block
-        name="footer.store.socials"
-        as="footer-store-socials"
-        template="Siteation_StoreInfoExtra::hyva/socials.phtml"
-    />
-</referenceContainer>
 ```
 
-### Adding a Whatsapp call us button
+> Other options are: `coc-number.phtml`, `whatsapp-button.phtml`
 
-```xml
-<!-- Luma Sample -->
-<referenceContainer name="footer">
-    <block name="footer.store.whatsapp"
-        as="footer-store-whatsapp"
-        template="Siteation_StoreInfoExtra::luma/whatsapp-button.phtml">
-        <arguments>
-            <argument name="viewModelStoreInfo" 
-                xsi:type="object">Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra</argument>
-        </arguments>
-    </block>
-</referenceContainer>
-<!-- Hyva Sample -->
-<referenceContainer name="footer">
-    <block
-        name="footer.store.whatsapp"
-        as="footer-store-whatsapp"
-        template="Siteation_StoreInfoExtra::hyva/whatsapp-button.phtml"
-    />
-</referenceContainer>
-```
+</details>
 
 ### Extending
 
-<!-- TODO -->
+Incase you want to add your own fields,
+you need create your own module,
+that has at least contains the `etc/adminhtml/system.xml` file.
 
-[See the Wiki](https://github.com/Siteation/magento2-module-storeinfo/wiki)
-on some nice use cases.
+In here you can create new fields, just as this module is doing.
 
-## Preview sample
+## Preview
 
-![Magento screenshot](assets/preview.png)
+![Magento 2 footer with social icons](assets/preview.png)
