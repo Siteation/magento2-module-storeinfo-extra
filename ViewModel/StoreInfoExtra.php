@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace Siteation\StoreInfoExtra\ViewModel;
 
@@ -27,6 +25,16 @@ class StoreInfoExtra implements ArgumentInterface
     {
         $path = sprintf('general/store_information_extra/%s', $attribute);
         return $this->scopeConfig->getValue($path, ScopeInterface::SCOPE_STORE);
+    }
+
+    public function getCoCNumber(): string
+    {
+        return (string) $this->getStoreInfoExtra('coc_number');
+    }
+
+    public function getWhatsApp(): string
+    {
+        return (string) $this->getStoreInfoExtra('whatsapp_number');
     }
 
     public function getFacebook(): string
@@ -62,10 +70,5 @@ class StoreInfoExtra implements ArgumentInterface
     public function getVimeo(): string
     {
         return (string) $this->getStoreInfoExtra('vimeo_address');
-    }
-
-    public function getWhatsApp(): string
-    {
-        return (string) $this->getStoreInfoExtra('whatsapp_number');
     }
 }
