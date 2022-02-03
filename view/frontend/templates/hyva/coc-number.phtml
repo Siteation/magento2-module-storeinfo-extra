@@ -14,5 +14,5 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
 ?>
 
 <?php if ($coc = $storeInfoExtra->getCoCNumber()): ?>
-    <div><?= $escaper->escapeHtml(__('CoC Number %1', $coc)); ?></div>
+    <div><?= $escaper->escapeHtml(__('CoC number %1', $coc)); ?></div>
 <?php endif; ?>
