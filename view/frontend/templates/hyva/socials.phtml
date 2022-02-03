@@ -13,9 +13,9 @@ use Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra;
 $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
 ?>
 
-<div class="socials">
+<div class="socials flex flex-wrap">
     <?php if ($social = $storeInfoExtra->getFacebook()): ?>
-        <a class="action facebook"
+        <a class="action p-2 facebook"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
@@ -27,7 +27,7 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getTwitter()): ?>
-        <a class="action twitter"
+        <a class="action p-2 twitter"
             href="https://twitter.com/<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
@@ -39,7 +39,7 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getLinkedIn()): ?>
-        <a class="action linkedin"
+        <a class="action p-2 linkedin"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
@@ -51,7 +51,7 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getInstagram()): ?>
-        <a class="action instagram"
+        <a class="action p-2 instagram"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
@@ -63,7 +63,7 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getPinterest()): ?>
-        <a class="action pinterest"
+        <a class="action p-2 pinterest"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
@@ -75,7 +75,7 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getYouTube()): ?>
-        <a class="action youtube"
+        <a class="action p-2 youtube"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
@@ -87,7 +87,7 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getVimeo()): ?>
-        <a class="action vimeo"
+        <a class="action p-2 vimeo"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
             rel="noopener noreferrer">
