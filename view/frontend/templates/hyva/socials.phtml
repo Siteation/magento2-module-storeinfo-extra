@@ -8,17 +8,19 @@ use Siteation\StoreInfoExtra\ViewModel\StoreInfoExtra;
 /** @var ViewModelRegistry $viewModels */
 /** @var Template $block */
 /** @var Escaper $escaper */
-/** @var StoreInfoExtra $storeInfo */
+/** @var StoreInfoExtra $storeInfoExtra */
 
 $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
 ?>
 
 <div class="socials flex flex-wrap">
     <?php if ($social = $storeInfoExtra->getFacebook()): ?>
-        <a class="action p-2 facebook"
+        <a
+            class="action p-2 facebook"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('Go to our %1 page', 'Facebook')); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#facebook" />
@@ -27,10 +29,12 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getTwitter()): ?>
-        <a class="action p-2 twitter"
+        <a
+            class="action p-2 twitter"
             href="https://twitter.com/<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('Visit %1 on Twitter for more', $social)); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#twitter" />
@@ -39,10 +43,12 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getLinkedIn()): ?>
-        <a class="action p-2 linkedin"
+        <a
+            class="action p-2 linkedin"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('Go to our %1 page', 'LinkedIn')); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#linkedin" />
@@ -51,10 +57,12 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getInstagram()): ?>
-        <a class="action p-2 instagram"
+        <a
+            class="action p-2 instagram"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('Explore our %1 page', 'Instagram')); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#instagram" />
@@ -63,10 +71,12 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getPinterest()): ?>
-        <a class="action p-2 pinterest"
+        <a
+            class="action p-2 pinterest"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('Explore our %1 page', 'Pinterest')); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#pinterest" />
@@ -75,10 +85,12 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getYouTube()): ?>
-        <a class="action p-2 youtube"
+        <a
+            class="action p-2 youtube"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('View more on our %1 page', 'YouTube')); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#youtube" />
@@ -87,10 +99,12 @@ $storeInfoExtra = $viewModels->require(StoreInfoExtra::class);
     <?php endif; ?>
 
     <?php if ($social = $storeInfoExtra->getVimeo()): ?>
-        <a class="action p-2 vimeo"
+        <a
+            class="action p-2 vimeo"
             href="<?= $escaper->escapeHtml($social); ?>"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
                 <title><?= $escaper->escapeHtml(__('View more on our %1 page', 'Vimeo')); ?></title>
                 <use href="<?= $block->getViewFileUrl('Siteation_StoreInfoExtra::images/socials.svg'); ?>#vimeo" />
