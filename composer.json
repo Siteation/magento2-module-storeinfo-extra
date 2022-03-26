@@ -24,6 +24,9 @@
       "homepage": "https://siteation.dev/"
     }
   ],
+  "require": {
+    "magento/framework": ">=102.0.0"
+  },
   "autoload": {
     "files": [
       "registration.php"
