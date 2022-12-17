@@ -1,6 +1,6 @@
 # Siteation - Magento 2 Module Store Info Extra
 
-[![Packagist Version](https://img.shields.io/packagist/v/siteation/magento2-module-storeinfo-extra?style=for-the-badge)](https://packagist.org/packages/siteation/magento2-module-storeinfo-extra)
+[![Packagist Version](https://img.shields.io/packagist/v/siteation/magento2-storeinfo-extra?style=for-the-badge)](https://packagist.org/packages/siteation/magento2-storeinfo-extra)
 ![Supported Magento Versions](https://img.shields.io/badge/magento-%202.3_|_2.4-brightgreen.svg?logo=magento&longCache=true&style=for-the-badge)
 [![Hyvä Themes Supported](https://img.shields.io/badge/Hyva_Themes-Supported-3df0af.svg?longCache=true&style=for-the-badge)](https://hyva.io/)
 ![License](https://img.shields.io/github/license/Siteation/magento2-module-storeinfo-extra?color=%23234&style=for-the-badge)
@@ -15,7 +15,8 @@ Instead using static block or hard code it in your template directly.
 Install the package via;
 
 ```bash
-composer require siteation/magento2-module-storeinfo-extra
+composer require siteation/magento2-storeinfo-extra
+bin/magento module:enable Siteation_StoreInfoExtra
 bin/magento setup:upgrade
 ```
 
