@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.0.0] - 2022-12-17
+### Changed
+- Renamed composer name from `siteation/magento2-module-storeinfo-extra` to `siteation/magento2-storeinfo-extra`
+
 ## [1.1.0] - 2022-02-03
 ### Added
 - CoC number as option
