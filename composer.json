@@ -26,8 +26,8 @@
   ],
   "require": {
     "magento/framework": "^102.0|^103.0",
-    "magento/module-store": "^101.0|^101.1",
-    "magento/module-backend": "^100.3|^100.4"
+    "magento/module-backend": "^101.0|^102.0",
+    "magento/module-store": "^101.0|^101.1"
   },
   "autoload": {
     "files": ["registration.php"],
