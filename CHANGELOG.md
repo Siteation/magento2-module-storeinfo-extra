@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2022-12-17
+### Fixed
+- Dependacy version
+
 ## [2.0.0] - 2022-12-17
 ### Changed
 - Renamed composer name from `siteation/magento2-module-storeinfo-extra` to `siteation/magento2-storeinfo-extra`
